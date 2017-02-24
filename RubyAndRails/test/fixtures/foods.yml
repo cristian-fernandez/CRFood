@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  idType: 1
+  averageRating: 1
+  language: MyString
+
+two:
+  name: MyString
+  idType: 1
+  averageRating: 1
+  language: MyString

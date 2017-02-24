@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Idfood:</strong>
+  <%= @detail.idFood %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @detail.description %>
+</p>
+
+<p>
+  <strong>Ingredients:</strong>
+  <%= @detail.ingredients %>
+</p>
+
+<p>
+  <strong>Directions:</strong>
+  <%= @detail.directions %>
+</p>
+
+<p>
+  <strong>History:</strong>
+  <%= @detail.history %>
+</p>
+
+<%= link_to 'Edit', edit_detail_path(@detail) %> |
+<%= link_to 'Back', details_path %>
