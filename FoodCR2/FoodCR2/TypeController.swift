@@ -78,10 +78,25 @@ class TypeController{
      
 
     }
-        
-        
-
     }
+    
+    func Read() -> Array<cType>{
+        let realm = RealmManager();
+        let results = realm.getAllTypes()
+        var ctypes = [cType]()
+        
+        for type in results {
+            let ctype = cType()
+            ctype.id = type.id
+            ctype.name = type.name
+            
+            ctypes.append(ctype)
+            
+        }
+        
+        return ctypes
+    }
+
 
 
 

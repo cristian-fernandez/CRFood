@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -44,57 +43,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bp8-Ag-OHS">
-                                <rect key="frame" x="166" y="323" width="62" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="main" translatesAutoresizingMaskIntoConstraints="NO" id="BhC-O5-gaS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="3eT-Lb-BmT">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="SoG-xD-l9u"/>
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="SoG-xD-l9u"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="mainImage" destination="BhC-O5-gaS" id="bZ0-6V-ptX"/>
                         <outlet property="menuButton" destination="SoG-xD-l9u" id="kDy-mk-9pq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWw-9Z-5d9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1841" y="-201"/>
+            <point key="canvasLocation" x="1840.8" y="-201.04947526236884"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Types View Controller-->
         <scene sceneID="jWm-mF-FdP">
             <objects>
-                <tableViewController id="hom-xr-7dK" sceneMemberID="viewController">
+                <tableViewController id="hom-xr-7dK" customClass="TypesViewController" customModule="FoodCR2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="QMU-zB-xgM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="z06-qs-s2S">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="z06-qs-s2S" customClass="customCell" customModule="FoodCR2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z06-qs-s2S" id="edz-Qn-usn">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ITEM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diF-bt-LjC">
-                                            <rect key="frame" x="8" y="15" width="359" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCU-QV-go9">
+                                            <rect key="frame" x="8" y="11" width="337" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="leadingMargin" secondItem="diF-bt-LjC" secondAttribute="leading" id="8BA-pi-nbl"/>
-                                        <constraint firstAttribute="leadingMargin" secondItem="diF-bt-LjC" secondAttribute="leading" id="Fj3-m3-aqk"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="diF-bt-LjC" secondAttribute="bottom" id="KDt-dT-5oW"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="diF-bt-LjC" secondAttribute="trailing" id="bBJ-pe-YIV"/>
-                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="name" destination="FCU-QV-go9" id="ffF-pa-T2o"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -103,10 +98,13 @@
                             <outlet property="delegate" destination="hom-xr-7dK" id="QaK-KC-R4I"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="tableTypes" destination="QMU-zB-xgM" id="XY9-4b-6vs"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugg-yX-VQF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-20" y="603"/>
+            <point key="canvasLocation" x="-20" y="602.24887556221893"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qNy-RX-GlK">
@@ -127,4 +125,9 @@
             <point key="canvasLocation" x="910" y="-201"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="main" width="304" height="600"/>
+        <image name="menu" width="25" height="25"/>
+    </resources>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
 </document>

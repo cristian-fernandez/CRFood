@@ -13,6 +13,8 @@
 		766567F71E539D7500F0CD28 /* cType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766567F61E539D7500F0CD28 /* cType.swift */; };
 		912D7540A9E8C567D1504B8D /* Pods_FoodCR2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9178D0C965323466ABCF4559 /* Pods_FoodCR2.framework */; };
 		A931B3471E575F730003A4DA /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = A931B3461E575F730003A4DA /* Set.swift */; };
+		A931B34B1E649C5F0003A4DA /* TypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A931B34A1E649C5F0003A4DA /* TypesViewController.swift */; };
+		A931B34D1E64D3C80003A4DA /* customCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A931B34C1E64D3C80003A4DA /* customCell.swift */; };
 		E4866C3F1E5FA2D00091B2C2 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4866C3E1E5FA2D00091B2C2 /* RealmManager.swift */; };
 		E740F3021E42A55A00D78992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740F3011E42A55A00D78992 /* AppDelegate.swift */; };
 		E740F3041E42A55A00D78992 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740F3031E42A55A00D78992 /* ViewController.swift */; };
@@ -31,6 +33,8 @@
 		766567F61E539D7500F0CD28 /* cType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cType.swift; sourceTree = "<group>"; };
 		9178D0C965323466ABCF4559 /* Pods_FoodCR2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodCR2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A931B3461E575F730003A4DA /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		A931B34A1E649C5F0003A4DA /* TypesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesViewController.swift; sourceTree = "<group>"; };
+		A931B34C1E64D3C80003A4DA /* customCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customCell.swift; sourceTree = "<group>"; };
 		DB1C22EFBDEA372D9FF33D91 /* Pods-FoodCR2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodCR2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodCR2/Pods-FoodCR2.debug.xcconfig"; sourceTree = "<group>"; };
 		E4866C3E1E5FA2D00091B2C2 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		E740F2FE1E42A55A00D78992 /* FoodCR2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodCR2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +142,8 @@
 				766567F11E4C022400F0CD28 /* OurViewController.swift */,
 				766567F31E53766500F0CD28 /* TypeController.swift */,
 				A931B3461E575F730003A4DA /* Set.swift */,
+				A931B34A1E649C5F0003A4DA /* TypesViewController.swift */,
+				A931B34C1E64D3C80003A4DA /* customCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -268,12 +274,14 @@
 			files = (
 				E740F3041E42A55A00D78992 /* ViewController.swift in Sources */,
 				E4866C3F1E5FA2D00091B2C2 /* RealmManager.swift in Sources */,
+				A931B34D1E64D3C80003A4DA /* customCell.swift in Sources */,
 				766567F71E539D7500F0CD28 /* cType.swift in Sources */,
 				766567F41E53766500F0CD28 /* TypeController.swift in Sources */,
 				A931B3471E575F730003A4DA /* Set.swift in Sources */,
 				E740F3021E42A55A00D78992 /* AppDelegate.swift in Sources */,
 				766567EE1E4BFD0800F0CD28 /* SWRevealViewController.m in Sources */,
 				766567F21E4C022400F0CD28 /* OurViewController.swift in Sources */,
+				A931B34B1E649C5F0003A4DA /* TypesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
