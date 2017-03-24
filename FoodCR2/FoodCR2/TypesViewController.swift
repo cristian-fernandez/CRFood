@@ -95,7 +95,7 @@ class TypesViewController: UIViewController, UITableViewDelegate, UITableViewDat
      self.tableTypes.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic )
      self.tableTypes.endUpdates()*/
     
-<<<<<<< HEAD
+
   
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -108,12 +108,6 @@ class TypesViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         self.present(alertController, animated: true, completion: nil)
     }
-=======
-    
-    
-    
-    //  }
+  }
 
-    
->>>>>>> 4121f31d1f77030f3d953470a810b61973ce8a53
-}
+
