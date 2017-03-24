@@ -27,7 +27,7 @@ public class RealmManager {
     
     func getAllTypes() -> Results<cType>{
         if needsToInsertTypes() {
-            createDefaultTypes()
+            //createDefaultTypes()
             //createDefaultFoods()
             //createDefaultDetails()
         }
@@ -43,8 +43,36 @@ public class RealmManager {
         return false
     }
     
-    func createDefaultTypes(){
+    func getFoodsWithTypeName(typeID: Int) -> List<cFood>{
+        let type = getTypeWithID(typeID: typeID)
+        return type.foods
+    }
+    
+    func getTypeWithID(typeID: Int) -> cType{
+       let predicate = NSPredicate(format: "name = %@ ", typeID)
+       let types = realm.objects(cType.self).filter(predicate)
+       return types.first!
+    }
+    
+    func createFoodsWithTypesName(foodObject: cFood){
+        var typeSelected = getTypeWithID(typeID:foodObject.id)
+        //let food
         
     }
     
+    
+    /*
+    +(void) createFoodsWithTypesName:(NSString*)typeName foodName:(NSString*)foodName image:(NSString*)image{
+    Type *typeSelected = [self getTypeWithName:typeName];-
+    Food *food = [Food new];
+    food.FoodName = foodName;
+    food.type = typeSelected;
+    food.Image = image;
+    [self insertObjectInDB:food];
+    RLMRealm *realm = [RLMRealm defaultRealm];
+    [realm beginWriteTransaction];
+    [typeSelected.food addObject:food];
+    [realm commitWriteTransaction];
+    }
+ */
 }

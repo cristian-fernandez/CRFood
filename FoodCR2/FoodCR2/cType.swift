@@ -16,6 +16,7 @@ class cType: Object, Mappable {
     dynamic var id = 0
     dynamic var name = ""
     dynamic var updated_at = ""
+    let foods = List<cFood>()
     
   
     required convenience init?(map: Map) {

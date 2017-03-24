@@ -17,6 +17,14 @@ class customCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    
+    func setSelected(selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        
+        // Configure the view for the selected state
+    }
+     func tableView(_ tableView: UITableView, didSelectRowAt
+        indexPath: IndexPath){
+        var i = indexPath
+    }
     
 }

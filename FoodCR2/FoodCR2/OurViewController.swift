@@ -23,8 +23,8 @@ class OurViewController: UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        let typeController = TypeController()
-        typeController.getTypes()  //Get from service
+        let typeService = TypeService()
+        typeService.getTypes()  //Get from service
         
 //        let realm = RealmManager()
 //        let types = realm.getAllTypes()
