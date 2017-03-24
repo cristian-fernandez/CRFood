@@ -58,5 +58,16 @@ class TypesViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
     }
     
-    
+  
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let value =  self.typeArray[indexPath.row].name;
+        
+        let alertController = UIAlertController(title: "iOScreator", message:
+            "Hello, world! " + value, preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
 }

@@ -21,6 +21,7 @@
 		E740F3071E42A55A00D78992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E740F3051E42A55A00D78992 /* Main.storyboard */; };
 		E740F3091E42A55A00D78992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E740F3081E42A55A00D78992 /* Assets.xcassets */; };
 		E740F30C1E42A55A00D78992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E740F30A1E42A55A00D78992 /* LaunchScreen.storyboard */; };
+		E7916C541E72212700E3F8EB /* AsynImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7916C531E72212700E3F8EB /* AsynImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		E740F3081E42A55A00D78992 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E740F30B1E42A55A00D78992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E740F30D1E42A55A00D78992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7916C531E72212700E3F8EB /* AsynImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				E4866C3E1E5FA2D00091B2C2 /* RealmManager.swift */,
+				E7916C531E72212700E3F8EB /* AsynImage.swift */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				A931B34D1E64D3C80003A4DA /* customCell.swift in Sources */,
 				766567F71E539D7500F0CD28 /* cType.swift in Sources */,
 				766567F41E53766500F0CD28 /* TypeController.swift in Sources */,
+				E7916C541E72212700E3F8EB /* AsynImage.swift in Sources */,
 				A931B3471E575F730003A4DA /* Set.swift in Sources */,
 				E740F3021E42A55A00D78992 /* AppDelegate.swift in Sources */,
 				766567EE1E4BFD0800F0CD28 /* SWRevealViewController.m in Sources */,

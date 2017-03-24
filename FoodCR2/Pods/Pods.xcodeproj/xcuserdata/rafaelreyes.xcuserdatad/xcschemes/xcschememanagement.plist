@@ -8,35 +8,62 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>0</integer>
 		</dict>
 		<key>AlamofireObjectMapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 		<key>DCCoreDataManager-DCCoreDataManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>DCCoreDataManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>ObjectMapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 		<key>Pods-FoodCR2.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>RealmSwift.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>08A107D7708DB83068C99A5D6885E212</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0D2C626F99ACF350B5BCC7935DD0CB26</key>
 		<dict>
 			<key>primary</key>
@@ -47,7 +74,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>36BBB06C20FB31DC051923DF2ECC1612</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>761CAC60AEF94FBBAB81B3FF0945A11B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>79489AB34E0306F4831DDDF762797424</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -63,6 +105,26 @@
 			<true/>
 		</dict>
 		<key>B4FA84D41E12ABB64E8569B65DC8238A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C5CBCAA97E951CC882334464FBDF983D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D11A0177CE28C0F46C60202CC2E229CC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DF62D3A3DF5BFF31F7CACA0109F36CEE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FBD082A0D35F7917EAB9DD9D3CCA9976</key>
 		<dict>
 			<key>primary</key>
 			<true/>
