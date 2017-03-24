@@ -28,6 +28,7 @@ class TypesViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     
+   
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if(selectedIndex == indexPath.row) {
             return 100;
@@ -50,14 +51,51 @@ class TypesViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func readTypes()//read from core data put in list view
     {
         print("getTypes from coredata")
-        let typecontroller = TypeController()
+        let typeService = TypeService()
         
-        self.typeArray = typecontroller.Read()
+        self.typeArray = typeService.Read()
     
         self.tableTypes.reloadData()
         
     }
+    func tableView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: IndexPath) {
+        let nextViewController = (self.storyboard?.instantiateViewController(withIdentifier: "FoodViewController"))! as! FoodViewController
+         
+         //Food *foodSelected = self.FoodArray[indexPath.row];
+         //nextViewController.FoodName = foodSelected.FoodName;
+         
+         self.present(nextViewController, animated:true, completion:nil)
+    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //println(tasks[indexPath.row])
+        var i = indexPath
+    }
+//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
+//        if(selectedIndex == indexPath.row) {
+//            selectedIndex = -1
+//        } else {
+//            selectedIndex = indexPath.row
+//        }
+//    }
     
+    //
+    //        let nextViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("PublishersCollectionViewController"))! as! PublishersCollectionViewController
+    //        //self.navigationController?.setViewControllers([viewController], animated: true)
+    //        //self.navigationController?.pushViewController(nextViewController, animated: true)
+    //        self.presentViewController(nextViewController, animated:true, completion:nil)
+    //        //self.prese
+    ////        PublishersCollectionViewController *nextViewController =    [self.storyboard instantiateViewControllerWithIdentifier:@"PublishersCollectionViewController"];
+    //
+    //        //nextViewController.categoryName = self.categoryName;
+    //        [self.navigationController pushViewController:nextViewController animated: YES];
+    //
+    
+    
+    /*self.tableTypes.beginUpdates()
+     self.tableTypes.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic )
+     self.tableTypes.endUpdates()*/
+    
+<<<<<<< HEAD
   
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -70,4 +108,12 @@ class TypesViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         self.present(alertController, animated: true, completion: nil)
     }
+=======
+    
+    
+    
+    //  }
+
+    
+>>>>>>> 4121f31d1f77030f3d953470a810b61973ce8a53
 }
